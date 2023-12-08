@@ -5,7 +5,7 @@ exports.id = 94;
 exports.ids = [94,195];
 exports.modules = {
 
-/***/ 1167:
+/***/ 8604:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
@@ -15,97 +15,92 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "getStaticPaths": () => (/* binding */ getStaticPaths),
 /* harmony export */   "getStaticProps": () => (/* binding */ getStaticProps)
 /* harmony export */ });
-/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7147);
-/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_PageTitle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7039);
-/* harmony import */ var _lib_generate_rss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2399);
-/* harmony import */ var _components_MDXComponents__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4172);
-/* harmony import */ var _lib_mdx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(799);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_lib_mdx__WEBPACK_IMPORTED_MODULE_4__]);
-_lib_mdx__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7147);
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_PageTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8215);
+/* harmony import */ var _lib_generate_rss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3440);
+/* harmony import */ var _components_MDXComponents__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8620);
+/* harmony import */ var _lib_mdx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6852);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_lib_mdx__WEBPACK_IMPORTED_MODULE_5__]);
+_lib_mdx__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
 
 
 
 
 
-
-
-const DEFAULT_LAYOUT = 'PostLayout';
+const DEFAULT_LAYOUT = "PostLayout";
 async function getStaticPaths() {
-  const posts = (0,_lib_mdx__WEBPACK_IMPORTED_MODULE_4__/* .getFiles */ .bE)('blog');
-  return {
-    paths: posts.map(p => ({
-      params: {
-        slug: (0,_lib_mdx__WEBPACK_IMPORTED_MODULE_4__/* .formatSlug */ .gf)(p).split('/')
-      }
-    })),
-    fallback: false
-  };
+    const posts = (0,_lib_mdx__WEBPACK_IMPORTED_MODULE_5__/* .getFiles */ .bE)("blog");
+    return {
+        paths: posts.map((p)=>({
+                params: {
+                    slug: (0,_lib_mdx__WEBPACK_IMPORTED_MODULE_5__/* .formatSlug */ .gf)(p).split("/")
+                }
+            })),
+        fallback: false
+    };
 }
-async function getStaticProps({
-  params
-}) {
-  const allPosts = await (0,_lib_mdx__WEBPACK_IMPORTED_MODULE_4__/* .getAllFilesFrontMatter */ .sj)('blog');
-  const postIndex = allPosts.findIndex(post => (0,_lib_mdx__WEBPACK_IMPORTED_MODULE_4__/* .formatSlug */ .gf)(post.slug) === params.slug.join('/'));
-  const prev = allPosts[postIndex + 1] || null;
-  const next = allPosts[postIndex - 1] || null;
-  const post = await (0,_lib_mdx__WEBPACK_IMPORTED_MODULE_4__/* .getFileBySlug */ .x7)('blog', params.slug.join('/'));
-  const authorList = post.frontMatter.authors || ['default'];
-  const authorPromise = authorList.map(async author => {
-    const authorResults = await (0,_lib_mdx__WEBPACK_IMPORTED_MODULE_4__/* .getFileBySlug */ .x7)('authors', [author]);
-    return authorResults.frontMatter;
-  });
-  const authorDetails = await Promise.all(authorPromise); // rss
-
-  if (allPosts.length > 0) {
-    const rss = (0,_lib_generate_rss__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z)(allPosts);
-    fs__WEBPACK_IMPORTED_MODULE_0___default().writeFileSync('./public/feed.xml', rss);
-  }
-
-  return {
-    props: {
-      post,
-      authorDetails,
-      prev,
-      next
+async function getStaticProps({ params  }) {
+    const allPosts = await (0,_lib_mdx__WEBPACK_IMPORTED_MODULE_5__/* .getAllFilesFrontMatter */ .sj)("blog");
+    const postIndex = allPosts.findIndex((post)=>(0,_lib_mdx__WEBPACK_IMPORTED_MODULE_5__/* .formatSlug */ .gf)(post.slug) === params.slug.join("/"));
+    const prev = allPosts[postIndex + 1] || null;
+    const next = allPosts[postIndex - 1] || null;
+    const post = await (0,_lib_mdx__WEBPACK_IMPORTED_MODULE_5__/* .getFileBySlug */ .x7)("blog", params.slug.join("/"));
+    const authorList = post.frontMatter.authors || [
+        "default"
+    ];
+    const authorPromise = authorList.map(async (author)=>{
+        const authorResults = await (0,_lib_mdx__WEBPACK_IMPORTED_MODULE_5__/* .getFileBySlug */ .x7)("authors", [
+            author
+        ]);
+        return authorResults.frontMatter;
+    });
+    const authorDetails = await Promise.all(authorPromise);
+    // rss
+    if (allPosts.length > 0) {
+        const rss = (0,_lib_generate_rss__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z)(allPosts);
+        fs__WEBPACK_IMPORTED_MODULE_1___default().writeFileSync("./public/feed.xml", rss);
     }
-  };
+    return {
+        props: {
+            post,
+            authorDetails,
+            prev,
+            next
+        }
+    };
 }
-function Blog({
-  post,
-  authorDetails,
-  prev,
-  next
-}) {
-  const {
-    mdxSource,
-    toc,
-    frontMatter
-  } = post;
-  return /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
-    children: frontMatter.draft !== true ? /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx(_components_MDXComponents__WEBPACK_IMPORTED_MODULE_3__/* .MDXLayoutRenderer */ .J, {
-      layout: frontMatter.layout || DEFAULT_LAYOUT,
-      toc: toc,
-      mdxSource: mdxSource,
-      frontMatter: frontMatter,
-      authorDetails: authorDetails,
-      prev: prev,
-      next: next
-    }) : /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("div", {
-      className: "mt-24 text-center",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_components_PageTitle__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {
-        children: ["Under Construction", ' ', /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("span", {
-          role: "img",
-          "aria-label": "roadwork sign",
-          children: "\uD83D\uDEA7"
-        })]
-      })
-    })
-  });
+function Blog({ post , authorDetails , prev , next  }) {
+    const { mdxSource , toc , frontMatter  } = post;
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: frontMatter.draft !== true ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_MDXComponents__WEBPACK_IMPORTED_MODULE_4__/* .MDXLayoutRenderer */ .J, {
+            layout: frontMatter.layout || DEFAULT_LAYOUT,
+            toc: toc,
+            mdxSource: mdxSource,
+            frontMatter: frontMatter,
+            authorDetails: authorDetails,
+            prev: prev,
+            next: next
+        }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+            className: "mt-24 text-center",
+            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components_PageTitle__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
+                children: [
+                    "Under Construction",
+                    " ",
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                        role: "img",
+                        "aria-label": "roadwork sign",
+                        children: "\uD83D\uDEA7"
+                    })
+                ]
+            })
+        })
+    });
 }
+
 __webpack_async_result__();
 } catch(e) { __webpack_async_result__(e); } });
 
@@ -150,13 +145,6 @@ module.exports = require("mdx-bundler");
 /***/ ((module) => {
 
 module.exports = require("mdx-bundler/client");
-
-/***/ }),
-
-/***/ 1162:
-/***/ ((module) => {
-
-module.exports = require("next-themes");
 
 /***/ }),
 
@@ -496,7 +484,7 @@ module.exports = require("path");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [676,664,675,152,250,758,673,187,224,38,444,744,473,172,399], () => (__webpack_exec__(1167)));
+var __webpack_exports__ = __webpack_require__.X(0, [676,664,675,152,373,59,590,717,795,702,211,968,620,440], () => (__webpack_exec__(8604)));
 module.exports = __webpack_exports__;
 
 })();

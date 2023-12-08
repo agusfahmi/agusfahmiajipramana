@@ -5,7 +5,7 @@ exports.id = 521;
 exports.ids = [521,195];
 exports.modules = {
 
-/***/ 2780:
+/***/ 414:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
@@ -14,37 +14,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ About),
 /* harmony export */   "getStaticProps": () => (/* binding */ getStaticProps)
 /* harmony export */ });
-/* harmony import */ var _components_MDXComponents__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4172);
-/* harmony import */ var _lib_mdx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(799);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_lib_mdx__WEBPACK_IMPORTED_MODULE_1__]);
-_lib_mdx__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_MDXComponents__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8620);
+/* harmony import */ var _lib_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6852);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_lib_mdx__WEBPACK_IMPORTED_MODULE_2__]);
+_lib_mdx__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
 
 
-const DEFAULT_LAYOUT = 'AuthorLayout';
+const DEFAULT_LAYOUT = "AuthorLayout";
 async function getStaticProps() {
-  const authorDetails = await (0,_lib_mdx__WEBPACK_IMPORTED_MODULE_1__/* .getFileBySlug */ .x7)('authors', ['default']);
-  return {
-    props: {
-      authorDetails
-    }
-  };
+    const authorDetails = await (0,_lib_mdx__WEBPACK_IMPORTED_MODULE_2__/* .getFileBySlug */ .x7)("authors", [
+        "default"
+    ]);
+    return {
+        props: {
+            authorDetails
+        }
+    };
 }
-function About({
-  authorDetails
-}) {
-  const {
-    mdxSource,
-    frontMatter
-  } = authorDetails;
-  return /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx(_components_MDXComponents__WEBPACK_IMPORTED_MODULE_0__/* .MDXLayoutRenderer */ .J, {
-    layout: frontMatter.layout || DEFAULT_LAYOUT,
-    mdxSource: mdxSource,
-    frontMatter: frontMatter
-  });
+function About({ authorDetails  }) {
+    const { mdxSource , frontMatter  } = authorDetails;
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_MDXComponents__WEBPACK_IMPORTED_MODULE_1__/* .MDXLayoutRenderer */ .J, {
+        layout: frontMatter.layout || DEFAULT_LAYOUT,
+        mdxSource: mdxSource,
+        frontMatter: frontMatter
+    });
 }
+
 __webpack_async_result__();
 } catch(e) { __webpack_async_result__(e); } });
 
@@ -89,13 +87,6 @@ module.exports = require("mdx-bundler");
 /***/ ((module) => {
 
 module.exports = require("mdx-bundler/client");
-
-/***/ }),
-
-/***/ 1162:
-/***/ ((module) => {
-
-module.exports = require("next-themes");
 
 /***/ }),
 
@@ -435,7 +426,7 @@ module.exports = require("path");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [676,664,675,152,250,758,673,187,224,38,444,744,473,172], () => (__webpack_exec__(2780)));
+var __webpack_exports__ = __webpack_require__.X(0, [676,664,675,152,373,59,590,717,795,702,211,968,620], () => (__webpack_exec__(414)));
 module.exports = __webpack_exports__;
 
 })();

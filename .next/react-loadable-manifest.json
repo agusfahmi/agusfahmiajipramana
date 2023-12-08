@@ -6,33 +6,21 @@
     ]
   },
   "..\\components\\comments\\index.js -> @/components/comments/Disqus": {
-    "id": 3742,
+    "id": 9970,
     "files": [
-      "static/chunks/742.bc5b04d5a7faec7e.js"
+      "static/chunks/970.33e24662413d28af.js"
     ]
   },
   "..\\components\\comments\\index.js -> @/components/comments/Giscus": {
-    "id": 718,
+    "id": 6013,
     "files": [
-      "static/chunks/718.db5cc56864439b35.js"
+      "static/chunks/13.f467a73df22e3b79.js"
     ]
   },
   "..\\components\\comments\\index.js -> @/components/comments/Utterances": {
-    "id": 5617,
+    "id": 369,
     "files": [
-      "static/chunks/617.6afcc05a2b35e481.js"
-    ]
-  },
-  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_app": {
-    "id": 2741,
-    "files": [
-      "static/chunks/741.990e57d3a824aa58.js"
-    ]
-  },
-  "..\\node_modules\\next\\dist\\client\\index.js -> ../pages/_error": {
-    "id": 9651,
-    "files": [
-      "static/chunks/651.e11f2e9f210a4ffb.js"
+      "static/chunks/369.51161a6b54f0fd1a.js"
     ]
   }
 }

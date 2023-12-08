@@ -5,7 +5,7 @@ exports.id = 51;
 exports.ids = [51,195];
 exports.modules = {
 
-/***/ 9285:
+/***/ 2051:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
@@ -15,18 +15,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "getStaticPaths": () => (/* binding */ getStaticPaths),
 /* harmony export */   "getStaticProps": () => (/* binding */ getStaticProps)
 /* harmony export */ });
-/* harmony import */ var _components_SEO__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2673);
-/* harmony import */ var _data_siteMetadata__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2758);
-/* harmony import */ var _data_siteMetadata__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_data_siteMetadata__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _lib_mdx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(799);
-/* harmony import */ var _layouts_ListLayout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5224);
-/* harmony import */ var _blog__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6829);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_lib_mdx__WEBPACK_IMPORTED_MODULE_2__, _blog__WEBPACK_IMPORTED_MODULE_4__]);
-([_lib_mdx__WEBPACK_IMPORTED_MODULE_2__, _blog__WEBPACK_IMPORTED_MODULE_4__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
-
-
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_SEO__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8590);
+/* harmony import */ var _data_siteMetadata__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7059);
+/* harmony import */ var _data_siteMetadata__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_data_siteMetadata__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _lib_mdx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6852);
+/* harmony import */ var _layouts_ListLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9795);
+/* harmony import */ var _blog__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5705);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_lib_mdx__WEBPACK_IMPORTED_MODULE_3__, _blog__WEBPACK_IMPORTED_MODULE_5__]);
+([_lib_mdx__WEBPACK_IMPORTED_MODULE_3__, _blog__WEBPACK_IMPORTED_MODULE_5__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
 
 
 
@@ -34,58 +32,54 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_lib
 
 
 async function getStaticPaths() {
-  const totalPosts = await (0,_lib_mdx__WEBPACK_IMPORTED_MODULE_2__/* .getAllFilesFrontMatter */ .sj)('blog');
-  const totalPages = Math.ceil(totalPosts.length / _blog__WEBPACK_IMPORTED_MODULE_4__.POSTS_PER_PAGE);
-  const paths = Array.from({
-    length: totalPages
-  }, (_, i) => ({
-    params: {
-      page: (i + 1).toString()
-    }
-  }));
-  return {
-    paths,
-    fallback: false
-  };
+    const totalPosts = await (0,_lib_mdx__WEBPACK_IMPORTED_MODULE_3__/* .getAllFilesFrontMatter */ .sj)("blog");
+    const totalPages = Math.ceil(totalPosts.length / _blog__WEBPACK_IMPORTED_MODULE_5__.POSTS_PER_PAGE);
+    const paths = Array.from({
+        length: totalPages
+    }, (_, i)=>({
+            params: {
+                page: (i + 1).toString()
+            }
+        }));
+    return {
+        paths,
+        fallback: false
+    };
 }
 async function getStaticProps(context) {
-  const {
-    params: {
-      page
-    }
-  } = context;
-  const posts = await (0,_lib_mdx__WEBPACK_IMPORTED_MODULE_2__/* .getAllFilesFrontMatter */ .sj)('blog');
-  const pageNumber = parseInt(page);
-  const initialDisplayPosts = posts.slice(_blog__WEBPACK_IMPORTED_MODULE_4__.POSTS_PER_PAGE * (pageNumber - 1), _blog__WEBPACK_IMPORTED_MODULE_4__.POSTS_PER_PAGE * pageNumber);
-  const pagination = {
-    currentPage: pageNumber,
-    totalPages: Math.ceil(posts.length / _blog__WEBPACK_IMPORTED_MODULE_4__.POSTS_PER_PAGE)
-  };
-  return {
-    props: {
-      posts,
-      initialDisplayPosts,
-      pagination
-    }
-  };
+    const { params: { page  } ,  } = context;
+    const posts = await (0,_lib_mdx__WEBPACK_IMPORTED_MODULE_3__/* .getAllFilesFrontMatter */ .sj)("blog");
+    const pageNumber = parseInt(page);
+    const initialDisplayPosts = posts.slice(_blog__WEBPACK_IMPORTED_MODULE_5__.POSTS_PER_PAGE * (pageNumber - 1), _blog__WEBPACK_IMPORTED_MODULE_5__.POSTS_PER_PAGE * pageNumber);
+    const pagination = {
+        currentPage: pageNumber,
+        totalPages: Math.ceil(posts.length / _blog__WEBPACK_IMPORTED_MODULE_5__.POSTS_PER_PAGE)
+    };
+    return {
+        props: {
+            posts,
+            initialDisplayPosts,
+            pagination
+        }
+    };
 }
-function PostPage({
-  posts,
-  initialDisplayPosts,
-  pagination
-}) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
-    children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx(_components_SEO__WEBPACK_IMPORTED_MODULE_0__/* .PageSEO */ .TQ, {
-      title: (_data_siteMetadata__WEBPACK_IMPORTED_MODULE_1___default().title),
-      description: (_data_siteMetadata__WEBPACK_IMPORTED_MODULE_1___default().description)
-    }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx(_layouts_ListLayout__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      posts: posts,
-      initialDisplayPosts: initialDisplayPosts,
-      pagination: pagination,
-      title: "All Posts"
-    })]
-  });
+function PostPage({ posts , initialDisplayPosts , pagination  }) {
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: [
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_SEO__WEBPACK_IMPORTED_MODULE_1__/* .PageSEO */ .TQ, {
+                title: (_data_siteMetadata__WEBPACK_IMPORTED_MODULE_2___default().title),
+                description: (_data_siteMetadata__WEBPACK_IMPORTED_MODULE_2___default().description)
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_layouts_ListLayout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+                posts: posts,
+                initialDisplayPosts: initialDisplayPosts,
+                pagination: pagination,
+                title: "All Posts"
+            })
+        ]
+    });
 }
+
 __webpack_async_result__();
 } catch(e) { __webpack_async_result__(e); } });
 
@@ -427,7 +421,7 @@ module.exports = require("path");
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [676,664,250,758,673,187,224,829], () => (__webpack_exec__(9285)));
+var __webpack_exports__ = __webpack_require__.X(0, [676,664,373,59,590,717,795,705], () => (__webpack_exec__(2051)));
 module.exports = __webpack_exports__;
 
 })();

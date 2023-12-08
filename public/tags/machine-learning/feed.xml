@@ -2,18 +2,18 @@
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
       <title>Agus Fahmi Aji Pramana - Machine Learning</title>
-      <link>https://www.agusfahmi.github.io//blog</link>
+      <link>https://agusfahmiajipramana.vercel.app//blog</link>
       <description>Portfolio of a Student Machine Learning.</description>
       <language>en-us</language>
       <managingEditor>agusfahmiajipramana@gmail.com (Agus Fahmi Aji Pramana)</managingEditor>
       <webMaster>agusfahmiajipramana@gmail.com (Agus Fahmi Aji Pramana)</webMaster>
       <lastBuildDate>Mon, 11 Sep 2023 17:00:00 GMT</lastBuildDate>
-      <atom:link href="https://www.agusfahmi.github.io//tags/machine-learning/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://agusfahmiajipramana.vercel.app//tags/machine-learning/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://www.agusfahmi.github.io//blog/projects/o-care</guid>
+    <guid>https://agusfahmiajipramana.vercel.app//blog/projects/o-care</guid>
     <title>O-Care App</title>
-    <link>https://www.agusfahmi.github.io//blog/projects/o-care</link>
+    <link>https://agusfahmiajipramana.vercel.app//blog/projects/o-care</link>
     <description>In 2018 as part of its new brand strategy, Havana Club made a collaboration with a French artist: VALD.</description>
     <pubDate>Mon, 11 Sep 2023 17:00:00 GMT</pubDate>
     <author>agusfahmiajipramana@gmail.com (Agus Fahmi Aji Pramana)</author>
@@ -21,9 +21,9 @@
   </item>
 
   <item>
-    <guid>https://www.agusfahmi.github.io//blog/projects/pasarkita</guid>
+    <guid>https://agusfahmiajipramana.vercel.app//blog/projects/pasarkita</guid>
     <title>Pasar Kita App - Digitalize Traditional Market</title>
-    <link>https://www.agusfahmi.github.io//blog/projects/pasarkita</link>
+    <link>https://agusfahmiajipramana.vercel.app//blog/projects/pasarkita</link>
     <description>Since 2021, I have been working with TotalEnergies Lubricants teams to create &amp; develop graphic guidelines...</description>
     <pubDate>Sat, 15 Jul 2023 00:00:00 GMT</pubDate>
     <author>agusfahmiajipramana@gmail.com (Agus Fahmi Aji Pramana)</author>
