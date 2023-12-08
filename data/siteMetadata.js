@@ -5,8 +5,8 @@ const siteMetadata = {
   description: 'Portfolio of a Student Machine Learning.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://www.agusfahmi.github.io/',
-  siteRepo: 'https://github.com/agusfahmi.github.io',
+  siteUrl: 'https://agusfahmiajipramana.vercel.app/',
+  siteRepo: 'https://github.com/agusfahmi/agusfahmiajipramana',
   siteLogo: '/static/images/raph-logo.png',
   image: '/static/images/avatar.jpg',
   socialBanner: '/static/images/twitter-card.png',
