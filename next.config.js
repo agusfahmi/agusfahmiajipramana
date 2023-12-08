@@ -4,11 +4,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 /**
  * @type {import('next').NextConfig}
  */
-const nextConfig = {
-  output: 'export'
-}
- 
-module.exports = nextConfig
 
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
