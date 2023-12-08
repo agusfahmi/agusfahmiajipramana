@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Agus Fahmi Aji Pramana - Machine Learning</title>
+      <link>https://www.agusfahmi.github.io//blog</link>
+      <description>Portfolio of a Student Machine Learning.</description>
+      <language>en-us</language>
+      <managingEditor>agusfahmiajipramana@gmail.com (Agus Fahmi Aji Pramana)</managingEditor>
+      <webMaster>agusfahmiajipramana@gmail.com (Agus Fahmi Aji Pramana)</webMaster>
+      <lastBuildDate>Mon, 11 Sep 2023 17:00:00 GMT</lastBuildDate>
+      <atom:link href="https://www.agusfahmi.github.io//tags/ai/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://www.agusfahmi.github.io//blog/projects/o-care</guid>
+    <title>O-Care App</title>
+    <link>https://www.agusfahmi.github.io//blog/projects/o-care</link>
+    <description>In 2018 as part of its new brand strategy, Havana Club made a collaboration with a French artist: VALD.</description>
+    <pubDate>Mon, 11 Sep 2023 17:00:00 GMT</pubDate>
+    <author>agusfahmiajipramana@gmail.com (Agus Fahmi Aji Pramana)</author>
+    <category>AI</category><category>Competition</category><category>Machine Learning</category><category>Android</category>
+  </item>
+
+    </channel>
+  </rss>

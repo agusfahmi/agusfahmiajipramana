@@ -1,0 +1,34 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Agus Fahmi Aji Pramana - Machine Learning</title>
+      <link>https://www.agusfahmi.github.io//blog</link>
+      <description>Portfolio of a Student Machine Learning.</description>
+      <language>en-us</language>
+      <managingEditor>agusfahmiajipramana@gmail.com (Agus Fahmi Aji Pramana)</managingEditor>
+      <webMaster>agusfahmiajipramana@gmail.com (Agus Fahmi Aji Pramana)</webMaster>
+      <lastBuildDate>Sun, 01 Oct 2023 17:00:00 GMT</lastBuildDate>
+      <atom:link href="https://www.agusfahmi.github.io//tags/website/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://www.agusfahmi.github.io//blog/projects/mjapart</guid>
+    <title>Mega Jaya Abadi Website</title>
+    <link>https://www.agusfahmi.github.io//blog/projects/mjapart</link>
+    <description>Creation, configuration and development of an e-commerce website on WordPress for a famous surfboard shaper</description>
+    <pubDate>Sun, 01 Oct 2023 17:00:00 GMT</pubDate>
+    <author>agusfahmiajipramana@gmail.com (Agus Fahmi Aji Pramana)</author>
+    <category>Work Projects</category><category>Wordpress</category><category>WebSite</category>
+  </item>
+
+  <item>
+    <guid>https://www.agusfahmi.github.io//blog/from-wordpress-to-nextjs</guid>
+    <title>Why I&#39;ve switched from WordPress to Next.js to create my personal website?</title>
+    <link>https://www.agusfahmi.github.io//blog/from-wordpress-to-nextjs</link>
+    <description>In the middle of 2021, I did some research to do a redesign of my personal website. This one was starting to get pretty old...</description>
+    <pubDate>Thu, 02 Jun 2022 00:00:00 GMT</pubDate>
+    <author>agusfahmiajipramana@gmail.com (Agus Fahmi Aji Pramana)</author>
+    <category>Story</category><category>Next-js</category><category>WordPress</category><category>WebSite</category>
+  </item>
+
+    </channel>
+  </rss>
