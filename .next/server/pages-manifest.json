@@ -1,0 +1,19 @@
+{
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/_app": "pages/_app.js",
+  "/404": "pages/404.html",
+  "/api/buttondown": "pages/api/buttondown.js",
+  "/api/mailchimp": "pages/api/mailchimp.js",
+  "/api/klaviyo": "pages/api/klaviyo.js",
+  "/api/revue": "pages/api/revue.js",
+  "/api/convertkit": "pages/api/convertkit.js",
+  "/projects": "pages/projects.html",
+  "/blog": "pages/blog.js",
+  "/blog/[...slug]": "pages/blog/[...slug].js",
+  "/blog/page/[page]": "pages/blog/page/[page].js",
+  "/": "pages/index.js",
+  "/tags": "pages/tags.js",
+  "/tags/[tag]": "pages/tags/[tag].js",
+  "/about": "pages/about.js"
+}
